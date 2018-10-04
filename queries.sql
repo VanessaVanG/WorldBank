@@ -34,6 +34,6 @@ LEFT JOIN
 	(SELECT Code, ReportedYear, IncomeGroup
 	FROM income_group) AS i
 	ON i.Code = p.Code
-		AND AND i.ReportedYear = p.ReportedYear
+		AND i.ReportedYear = p.ReportedYear
 WHERE RatioValue IS NOT null
 GROUP BY p.Code;

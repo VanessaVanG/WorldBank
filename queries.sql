@@ -1,7 +1,7 @@
 -- sqlite
 /* Assumptions:
   - Don't report countries without a value from the POV
-  - Countries with a zero value from the POV is valid
+  - Countries with a zero value from the POV are valid
   - If the country and corresponding latest year don't have an income group for that year, 
   leave blank but don't drop (if I were to drop nulls, I'd add AND IncomeGroup IS NOT null to 
   the WHERE clause)

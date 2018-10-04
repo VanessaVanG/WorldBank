@@ -25,7 +25,7 @@ GROUP BY Code;
  (from https://datahelpdesk.worldbank.org/knowledgebase/articles/906519-world-bank-country-and-lending-groups )
  */
  
- SELECT p.Country
+SELECT p.Country
 	, MAX(p.ReportedYear) AS "Year"
 	, RatioValue AS "Value"
 	, IncomeGroup AS "Income Group"
